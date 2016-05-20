@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sonu88.mealonroad.MainActivity">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:id="@+id/layout1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20dp"
+            android:id="@+id/textView_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_name"
+            android:paddingTop="13dp"
+            android:layout_toRightOf="@id/textView_name"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Of PickUp"
+            android:id="@+id/textView_place"
+            android:layout_below="@id/editText_name"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_place"
+            android:layout_below="@id/textView_name"
+            android:layout_toRightOf="@id/textView_place"
+            android:layout_toEndOf="@id/textView_place"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:id="@+id/textView_phonenumber"
+            android:layout_below="@id/editText_place"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_phonenumber"
+            android:layout_below="@+id/textView_place"
+            android:layout_toRightOf="@+id/textView_place"
+            android:layout_toEndOf="@+id/textView_place" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweets"
+            android:id="@+id/checkBox_sweet"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drinks"
+            android:id="@+id/checkBox_drink"
+            android:layout_alignParentBottom="true"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plates"
+            android:id="@+id/checkBox_plate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            android:paddingRight="20dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:orientation="vertical"
+        android:id="@+id/layout2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/chinesenoodels"
+                android:layout_marginLeft="18dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOODLES"
+                android:id="@+id/textView_noodles"
+                android:paddingTop="20dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1 per Plate"
+                android:id="@+id/textView_priceNoddels"
+                android:layout_marginTop="48dp"
+
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:id="@+id/textView_quantityN"
+               android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+
+                android:layout_toRightOf="@+id/textView_priceNoddels"
+                 />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/button2"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_toRightOf="@id/textView_priceNoddels"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/quantity_text_view"
+                    android:layout_toRightOf="@id/button2"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:textAllCaps="true"
+                    />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:id="@+id/button1"
+                    android:layout_toRightOf="@id/quantity_text_view"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="28dp"
+                    />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView1"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/southindianthali"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INDIAN THALI"
+                android:id="@+id/textView_thali"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2 per Plate"
+                android:id="@+id/textView_priceThali"
+                android:layout_marginTop="45dp"
+
+                android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/button4"
+                    android:layout_toRightOf="@id/textView_thali"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/quantity_text_view1"
+                    android:layout_toRightOf="@id/button4"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:id="@+id/button3"
+                    android:layout_toRightOf="@id/quantity_text_view1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/rotiwithcurry"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROTI CURRY"
+                android:id="@+id/textView_roti"
+                android:paddingTop="20dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2 per Plate"
+                android:id="@+id/textView_priceRoti"
+                android:layout_marginTop="48dp"
+
+                android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/button6"
+                    android:layout_toRightOf="@id/textView_priceRoti"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/quantity_text_view2"
+                    android:layout_toRightOf="@id/button6"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:id="@+id/button5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/quantity_text_view2"
+
+                    />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView3"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/bread"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BREAD"
+                android:id="@+id/textView_bread"
+                android:paddingTop="20dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1 per Combo"
+                android:id="@+id/textView_priceBread"
+                android:layout_marginTop="48dp"
+
+                android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    android:id="@+id/button8"
+                    android:layout_toRightOf="@id/textView_priceBread"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0"
+                    android:id="@+id/quantity_text_view3"
+                    android:layout_toRightOf="@id/button8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="28dp"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:textAllCaps="true"
+                    />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"
+                    android:id="@+id/button7"
+                    android:layout_toRightOf="@id/quantity_text_view3"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/layout3"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order"
+            android:textAllCaps="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/button_order"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:onClick="submitOrder" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

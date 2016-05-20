@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MealOnRoad</string>
+    <string name="title_activity_display_message">Order Summary</string>
+</resources>
